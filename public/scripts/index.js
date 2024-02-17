@@ -63,7 +63,7 @@ function updateUserList(socketIds) {
   });
 }
 
-const socket = io.connect("localhost:5000");
+const socket = io.connect("https://webrtc-test-l40m.onrender.com/");
 
 socket.on("update-user-list", ({ users }) => {
   updateUserList(users);
